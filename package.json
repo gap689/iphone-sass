@@ -1,0 +1,25 @@
+{
+  "name": "iphone11pro",
+  "version": "1.0.0",
+  "description": "iphone 11 pro css practice",
+  "main": "iphone.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/"
+  },
+  "keywords": [
+    "css",
+    "html"
+  ],
+  "author": "German Alamilla",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

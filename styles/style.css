@@ -1,0 +1,1467 @@
+/* $purple: #c7bfd4;
+ */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #7A7793;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.iphone.purple {
+  position: absolute;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-name: "purple";
+          animation-name: "purple";
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: 6;
+}
+
+@-webkit-keyframes purple {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes purple {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+.iphone.purple .border {
+  width: 258px;
+  height: 510px;
+  background-color: #c7bfd4;
+  border-radius: 40px;
+  -webkit-box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.5), 0 0 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.5), 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 7px;
+}
+
+.iphone.purple .border .line {
+  position: absolute;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #c7bfd4;
+  -webkit-box-shadow: inset -3px 0 4px -1px rgba(0, 0, 0, 0.5), inset 2px 0 2px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -3px 0 4px -1px rgba(0, 0, 0, 0.5), inset 2px 0 2px -1px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.purple .border .line.line-top {
+  top: 45px;
+}
+
+.iphone.purple .border .line.line-bottom {
+  bottom: 45px;
+}
+
+.iphone.purple .border .glass {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #c7bfd4;
+  border: 2px solid #b2a7c4;
+  border-radius: 34px;
+  -webkit-box-shadow: inset 6px 0 5px -5px rgba(255, 255, 255, 0.8), inset -6px 0 5px -5px rgba(255, 255, 255, 0.8), 0 0 2px 0 rgba(255, 255, 255, 0.7);
+          box-shadow: inset 6px 0 5px -5px rgba(255, 255, 255, 0.8), inset -6px 0 5px -5px rgba(255, 255, 255, 0.8), 0 0 2px 0 rgba(255, 255, 255, 0.7);
+  padding: 8px;
+}
+
+.iphone.purple .border .glass .camera {
+  position: relative;
+  width: 90px;
+  height: 102px;
+  border-radius: 25px;
+  background: #c7bfd4;
+  border: 3px solid #b2a7c4;
+  -webkit-box-shadow: 6px 0 5px -5px rgba(255, 255, 255, 0.8), -6px 0 5px -5px rgba(255, 255, 255, 0.8);
+          box-shadow: 6px 0 5px -5px rgba(255, 255, 255, 0.8), -6px 0 5px -5px rgba(255, 255, 255, 0.8);
+}
+
+.iphone.purple .border .glass .camera .objective {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px solid #c7bfd4;
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.purple .border .glass .camera .objective.objective-top {
+  top: 5px;
+  left: 5px;
+}
+
+.iphone.purple .border .glass .camera .objective.objective-bottom {
+  bottom: 5px;
+  left: 5px;
+}
+
+.iphone.purple .border .glass .camera .objective.objective-right {
+  top: 33px;
+  right: 5px;
+}
+
+.iphone.purple .border .glass .camera .objective .lens {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #161a23;
+}
+
+.iphone.purple .border .glass .camera .objective .lens::after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: -webkit-gradient(linear, left top, right top, from(#26437d), color-stop(60%, #0f0d1b), to(#647893));
+  background: linear-gradient(90deg, #26437d 0%, #0f0d1b 60%, #647893 100%);
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.iphone.purple .border .glass .camera .flash {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  height: 16px;
+  width: 16px;
+  background: -webkit-gradient(linear, left top, right top, from(#d7cdc4), color-stop(50%, #f5e7d9), to(#d2c5ba));
+  background: linear-gradient(90deg, #d7cdc4 0%, #f5e7d9 50%, #d2c5ba 100%);
+  border-radius: 50%;
+  border: 2px solid #c7bfd4;
+  -webkit-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2), -2px 0 2px 0 rgba(255, 255, 255, 0.4);
+          box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2), -2px 0 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+.iphone.purple .border .glass .camera .mic {
+  position: absolute;
+  bottom: 10px;
+  right: 18px;
+  width: 8px;
+  height: 8px;
+  background-color: #504f4f;
+  border-radius: 50%;
+  border: 1px solid #c7c3c3;
+}
+
+.iphone.purple .fa {
+  position: absolute;
+  font-size: 70px;
+  top: 213px;
+  left: 97px;
+}
+
+.iphone.purple .fa.fa-apple {
+  color: white;
+}
+
+.iphone.purple .lock {
+  position: absolute;
+  top: 120px;
+  left: -2px;
+  width: 3px;
+  height: 55px;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  background-color: #c7bfd4;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.purple .volume {
+  position: absolute;
+  top: 100px;
+  right: -2px;
+  width: 3px;
+  height: 70px;
+}
+
+.iphone.purple .volume .up {
+  width: 100%;
+  height: 30px;
+  background-color: #c7bfd4;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.purple .volume .down {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+  background-color: #c7bfd4;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.purple .notif {
+  position: absolute;
+  top: 65px;
+  right: -2px;
+  width: 3px;
+  height: 20px;
+  background-color: #c7bfd4;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.green {
+  position: absolute;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-name: "green";
+          animation-name: "green";
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: 5;
+}
+
+@-webkit-keyframes green {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(-21deg);
+            transform: rotate(-21deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes green {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(-21deg);
+            transform: rotate(-21deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+.iphone.green .border {
+  width: 258px;
+  height: 510px;
+  background-color: #b4e0c9;
+  border-radius: 40px;
+  -webkit-box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.5), 0 0 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.5), 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 7px;
+}
+
+.iphone.green .border .line {
+  position: absolute;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #b4e0c9;
+  -webkit-box-shadow: inset -3px 0 4px -1px rgba(0, 0, 0, 0.5), inset 2px 0 2px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -3px 0 4px -1px rgba(0, 0, 0, 0.5), inset 2px 0 2px -1px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.green .border .line.line-top {
+  top: 45px;
+}
+
+.iphone.green .border .line.line-bottom {
+  bottom: 45px;
+}
+
+.iphone.green .border .glass {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #b4e0c9;
+  border: 2px solid #97d4b4;
+  border-radius: 34px;
+  -webkit-box-shadow: inset 6px 0 5px -5px rgba(255, 255, 255, 0.8), inset -6px 0 5px -5px rgba(255, 255, 255, 0.8), 0 0 2px 0 rgba(255, 255, 255, 0.7);
+          box-shadow: inset 6px 0 5px -5px rgba(255, 255, 255, 0.8), inset -6px 0 5px -5px rgba(255, 255, 255, 0.8), 0 0 2px 0 rgba(255, 255, 255, 0.7);
+  padding: 8px;
+}
+
+.iphone.green .border .glass .camera {
+  position: relative;
+  width: 90px;
+  height: 102px;
+  border-radius: 25px;
+  background: #b4e0c9;
+  border: 3px solid #97d4b4;
+  -webkit-box-shadow: 6px 0 5px -5px rgba(255, 255, 255, 0.8), -6px 0 5px -5px rgba(255, 255, 255, 0.8);
+          box-shadow: 6px 0 5px -5px rgba(255, 255, 255, 0.8), -6px 0 5px -5px rgba(255, 255, 255, 0.8);
+}
+
+.iphone.green .border .glass .camera .objective {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px solid #b4e0c9;
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.green .border .glass .camera .objective.objective-top {
+  top: 5px;
+  left: 5px;
+}
+
+.iphone.green .border .glass .camera .objective.objective-bottom {
+  bottom: 5px;
+  left: 5px;
+}
+
+.iphone.green .border .glass .camera .objective.objective-right {
+  top: 33px;
+  right: 5px;
+}
+
+.iphone.green .border .glass .camera .objective .lens {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #161a23;
+}
+
+.iphone.green .border .glass .camera .objective .lens::after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: -webkit-gradient(linear, left top, right top, from(#26437d), color-stop(60%, #0f0d1b), to(#647893));
+  background: linear-gradient(90deg, #26437d 0%, #0f0d1b 60%, #647893 100%);
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.iphone.green .border .glass .camera .flash {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  height: 16px;
+  width: 16px;
+  background: -webkit-gradient(linear, left top, right top, from(#d7cdc4), color-stop(50%, #f5e7d9), to(#d2c5ba));
+  background: linear-gradient(90deg, #d7cdc4 0%, #f5e7d9 50%, #d2c5ba 100%);
+  border-radius: 50%;
+  border: 2px solid #b4e0c9;
+  -webkit-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2), -2px 0 2px 0 rgba(255, 255, 255, 0.4);
+          box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2), -2px 0 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+.iphone.green .border .glass .camera .mic {
+  position: absolute;
+  bottom: 10px;
+  right: 18px;
+  width: 8px;
+  height: 8px;
+  background-color: #504f4f;
+  border-radius: 50%;
+  border: 1px solid #c7c3c3;
+}
+
+.iphone.green .fa {
+  position: absolute;
+  font-size: 70px;
+  top: 213px;
+  left: 97px;
+}
+
+.iphone.green .fa.fa-apple {
+  color: white;
+}
+
+.iphone.green .lock {
+  position: absolute;
+  top: 120px;
+  left: -2px;
+  width: 3px;
+  height: 55px;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  background-color: #b4e0c9;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.green .volume {
+  position: absolute;
+  top: 100px;
+  right: -2px;
+  width: 3px;
+  height: 70px;
+}
+
+.iphone.green .volume .up {
+  width: 100%;
+  height: 30px;
+  background-color: #b4e0c9;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.green .volume .down {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+  background-color: #b4e0c9;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.green .notif {
+  position: absolute;
+  top: 65px;
+  right: -2px;
+  width: 3px;
+  height: 20px;
+  background-color: #b4e0c9;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.yellow {
+  position: absolute;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-name: "yellow";
+          animation-name: "yellow";
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: 4;
+}
+
+@-webkit-keyframes yellow {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(-42deg);
+            transform: rotate(-42deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes yellow {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(-42deg);
+            transform: rotate(-42deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+.iphone.yellow .border {
+  width: 258px;
+  height: 510px;
+  background-color: #ffe888;
+  border-radius: 40px;
+  -webkit-box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.5), 0 0 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.5), 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 7px;
+}
+
+.iphone.yellow .border .line {
+  position: absolute;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #ffe888;
+  -webkit-box-shadow: inset -3px 0 4px -1px rgba(0, 0, 0, 0.5), inset 2px 0 2px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -3px 0 4px -1px rgba(0, 0, 0, 0.5), inset 2px 0 2px -1px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.yellow .border .line.line-top {
+  top: 45px;
+}
+
+.iphone.yellow .border .line.line-bottom {
+  bottom: 45px;
+}
+
+.iphone.yellow .border .glass {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #ffe888;
+  border: 2px solid #ffe05f;
+  border-radius: 34px;
+  -webkit-box-shadow: inset 6px 0 5px -5px rgba(255, 255, 255, 0.8), inset -6px 0 5px -5px rgba(255, 255, 255, 0.8), 0 0 2px 0 rgba(255, 255, 255, 0.7);
+          box-shadow: inset 6px 0 5px -5px rgba(255, 255, 255, 0.8), inset -6px 0 5px -5px rgba(255, 255, 255, 0.8), 0 0 2px 0 rgba(255, 255, 255, 0.7);
+  padding: 8px;
+}
+
+.iphone.yellow .border .glass .camera {
+  position: relative;
+  width: 90px;
+  height: 102px;
+  border-radius: 25px;
+  background: #ffe888;
+  border: 3px solid #ffe05f;
+  -webkit-box-shadow: 6px 0 5px -5px rgba(255, 255, 255, 0.8), -6px 0 5px -5px rgba(255, 255, 255, 0.8);
+          box-shadow: 6px 0 5px -5px rgba(255, 255, 255, 0.8), -6px 0 5px -5px rgba(255, 255, 255, 0.8);
+}
+
+.iphone.yellow .border .glass .camera .objective {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px solid #ffe888;
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.yellow .border .glass .camera .objective.objective-top {
+  top: 5px;
+  left: 5px;
+}
+
+.iphone.yellow .border .glass .camera .objective.objective-bottom {
+  bottom: 5px;
+  left: 5px;
+}
+
+.iphone.yellow .border .glass .camera .objective.objective-right {
+  top: 33px;
+  right: 5px;
+}
+
+.iphone.yellow .border .glass .camera .objective .lens {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #161a23;
+}
+
+.iphone.yellow .border .glass .camera .objective .lens::after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: -webkit-gradient(linear, left top, right top, from(#26437d), color-stop(60%, #0f0d1b), to(#647893));
+  background: linear-gradient(90deg, #26437d 0%, #0f0d1b 60%, #647893 100%);
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.iphone.yellow .border .glass .camera .flash {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  height: 16px;
+  width: 16px;
+  background: -webkit-gradient(linear, left top, right top, from(#d7cdc4), color-stop(50%, #f5e7d9), to(#d2c5ba));
+  background: linear-gradient(90deg, #d7cdc4 0%, #f5e7d9 50%, #d2c5ba 100%);
+  border-radius: 50%;
+  border: 2px solid #ffe888;
+  -webkit-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2), -2px 0 2px 0 rgba(255, 255, 255, 0.4);
+          box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2), -2px 0 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+.iphone.yellow .border .glass .camera .mic {
+  position: absolute;
+  bottom: 10px;
+  right: 18px;
+  width: 8px;
+  height: 8px;
+  background-color: #504f4f;
+  border-radius: 50%;
+  border: 1px solid #c7c3c3;
+}
+
+.iphone.yellow .fa {
+  position: absolute;
+  font-size: 70px;
+  top: 213px;
+  left: 97px;
+}
+
+.iphone.yellow .fa.fa-apple {
+  color: white;
+}
+
+.iphone.yellow .lock {
+  position: absolute;
+  top: 120px;
+  left: -2px;
+  width: 3px;
+  height: 55px;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  background-color: #ffe888;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.yellow .volume {
+  position: absolute;
+  top: 100px;
+  right: -2px;
+  width: 3px;
+  height: 70px;
+}
+
+.iphone.yellow .volume .up {
+  width: 100%;
+  height: 30px;
+  background-color: #ffe888;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.yellow .volume .down {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+  background-color: #ffe888;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.yellow .notif {
+  position: absolute;
+  top: 65px;
+  right: -2px;
+  width: 3px;
+  height: 20px;
+  background-color: #ffe888;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.white {
+  position: absolute;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-name: "white";
+          animation-name: "white";
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: 3;
+}
+
+@-webkit-keyframes white {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(-63deg);
+            transform: rotate(-63deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes white {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(-63deg);
+            transform: rotate(-63deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+.iphone.white .border {
+  width: 258px;
+  height: 510px;
+  background-color: #f7f3e8;
+  border-radius: 40px;
+  -webkit-box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.5), 0 0 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.5), 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 7px;
+}
+
+.iphone.white .border .line {
+  position: absolute;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #f7f3e8;
+  -webkit-box-shadow: inset -3px 0 4px -1px rgba(0, 0, 0, 0.5), inset 2px 0 2px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -3px 0 4px -1px rgba(0, 0, 0, 0.5), inset 2px 0 2px -1px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.white .border .line.line-top {
+  top: 45px;
+}
+
+.iphone.white .border .line.line-bottom {
+  bottom: 45px;
+}
+
+.iphone.white .border .glass {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f3e8;
+  border: 2px solid #ece3ca;
+  border-radius: 34px;
+  -webkit-box-shadow: inset 6px 0 5px -5px rgba(255, 255, 255, 0.8), inset -6px 0 5px -5px rgba(255, 255, 255, 0.8), 0 0 2px 0 rgba(255, 255, 255, 0.7);
+          box-shadow: inset 6px 0 5px -5px rgba(255, 255, 255, 0.8), inset -6px 0 5px -5px rgba(255, 255, 255, 0.8), 0 0 2px 0 rgba(255, 255, 255, 0.7);
+  padding: 8px;
+}
+
+.iphone.white .border .glass .camera {
+  position: relative;
+  width: 90px;
+  height: 102px;
+  border-radius: 25px;
+  background: #f7f3e8;
+  border: 3px solid #ece3ca;
+  -webkit-box-shadow: 6px 0 5px -5px rgba(255, 255, 255, 0.8), -6px 0 5px -5px rgba(255, 255, 255, 0.8);
+          box-shadow: 6px 0 5px -5px rgba(255, 255, 255, 0.8), -6px 0 5px -5px rgba(255, 255, 255, 0.8);
+}
+
+.iphone.white .border .glass .camera .objective {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px solid #f7f3e8;
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.white .border .glass .camera .objective.objective-top {
+  top: 5px;
+  left: 5px;
+}
+
+.iphone.white .border .glass .camera .objective.objective-bottom {
+  bottom: 5px;
+  left: 5px;
+}
+
+.iphone.white .border .glass .camera .objective.objective-right {
+  top: 33px;
+  right: 5px;
+}
+
+.iphone.white .border .glass .camera .objective .lens {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #161a23;
+}
+
+.iphone.white .border .glass .camera .objective .lens::after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: -webkit-gradient(linear, left top, right top, from(#26437d), color-stop(60%, #0f0d1b), to(#647893));
+  background: linear-gradient(90deg, #26437d 0%, #0f0d1b 60%, #647893 100%);
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.iphone.white .border .glass .camera .flash {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  height: 16px;
+  width: 16px;
+  background: -webkit-gradient(linear, left top, right top, from(#d7cdc4), color-stop(50%, #f5e7d9), to(#d2c5ba));
+  background: linear-gradient(90deg, #d7cdc4 0%, #f5e7d9 50%, #d2c5ba 100%);
+  border-radius: 50%;
+  border: 2px solid #f7f3e8;
+  -webkit-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2), -2px 0 2px 0 rgba(255, 255, 255, 0.4);
+          box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2), -2px 0 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+.iphone.white .border .glass .camera .mic {
+  position: absolute;
+  bottom: 10px;
+  right: 18px;
+  width: 8px;
+  height: 8px;
+  background-color: #504f4f;
+  border-radius: 50%;
+  border: 1px solid #c7c3c3;
+}
+
+.iphone.white .fa {
+  position: absolute;
+  font-size: 70px;
+  top: 213px;
+  left: 97px;
+}
+
+.iphone.white .fa.fa-apple {
+  color: white;
+}
+
+.iphone.white .lock {
+  position: absolute;
+  top: 120px;
+  left: -2px;
+  width: 3px;
+  height: 55px;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  background-color: #f7f3e8;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.white .volume {
+  position: absolute;
+  top: 100px;
+  right: -2px;
+  width: 3px;
+  height: 70px;
+}
+
+.iphone.white .volume .up {
+  width: 100%;
+  height: 30px;
+  background-color: #f7f3e8;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.white .volume .down {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+  background-color: #f7f3e8;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.white .notif {
+  position: absolute;
+  top: 65px;
+  right: -2px;
+  width: 3px;
+  height: 20px;
+  background-color: #f7f3e8;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.black {
+  position: absolute;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-name: "black";
+          animation-name: "black";
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: 2;
+}
+
+@-webkit-keyframes black {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(-84deg);
+            transform: rotate(-84deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes black {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(-84deg);
+            transform: rotate(-84deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+.iphone.black .border {
+  width: 258px;
+  height: 510px;
+  background-color: #232524;
+  border-radius: 40px;
+  -webkit-box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.5), 0 0 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.5), 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 7px;
+}
+
+.iphone.black .border .line {
+  position: absolute;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #232524;
+  -webkit-box-shadow: inset -3px 0 4px -1px rgba(0, 0, 0, 0.5), inset 2px 0 2px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -3px 0 4px -1px rgba(0, 0, 0, 0.5), inset 2px 0 2px -1px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.black .border .line.line-top {
+  top: 45px;
+}
+
+.iphone.black .border .line.line-bottom {
+  bottom: 45px;
+}
+
+.iphone.black .border .glass {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #232524;
+  border: 2px solid #0f1010;
+  border-radius: 34px;
+  -webkit-box-shadow: inset 6px 0 5px -5px rgba(255, 255, 255, 0.8), inset -6px 0 5px -5px rgba(255, 255, 255, 0.8), 0 0 2px 0 rgba(255, 255, 255, 0.7);
+          box-shadow: inset 6px 0 5px -5px rgba(255, 255, 255, 0.8), inset -6px 0 5px -5px rgba(255, 255, 255, 0.8), 0 0 2px 0 rgba(255, 255, 255, 0.7);
+  padding: 8px;
+}
+
+.iphone.black .border .glass .camera {
+  position: relative;
+  width: 90px;
+  height: 102px;
+  border-radius: 25px;
+  background: #232524;
+  border: 3px solid #0f1010;
+  -webkit-box-shadow: 6px 0 5px -5px rgba(255, 255, 255, 0.8), -6px 0 5px -5px rgba(255, 255, 255, 0.8);
+          box-shadow: 6px 0 5px -5px rgba(255, 255, 255, 0.8), -6px 0 5px -5px rgba(255, 255, 255, 0.8);
+}
+
+.iphone.black .border .glass .camera .objective {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px solid #232524;
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.black .border .glass .camera .objective.objective-top {
+  top: 5px;
+  left: 5px;
+}
+
+.iphone.black .border .glass .camera .objective.objective-bottom {
+  bottom: 5px;
+  left: 5px;
+}
+
+.iphone.black .border .glass .camera .objective.objective-right {
+  top: 33px;
+  right: 5px;
+}
+
+.iphone.black .border .glass .camera .objective .lens {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #161a23;
+}
+
+.iphone.black .border .glass .camera .objective .lens::after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: -webkit-gradient(linear, left top, right top, from(#26437d), color-stop(60%, #0f0d1b), to(#647893));
+  background: linear-gradient(90deg, #26437d 0%, #0f0d1b 60%, #647893 100%);
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.iphone.black .border .glass .camera .flash {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  height: 16px;
+  width: 16px;
+  background: -webkit-gradient(linear, left top, right top, from(#d7cdc4), color-stop(50%, #f5e7d9), to(#d2c5ba));
+  background: linear-gradient(90deg, #d7cdc4 0%, #f5e7d9 50%, #d2c5ba 100%);
+  border-radius: 50%;
+  border: 2px solid #232524;
+  -webkit-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2), -2px 0 2px 0 rgba(255, 255, 255, 0.4);
+          box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2), -2px 0 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+.iphone.black .border .glass .camera .mic {
+  position: absolute;
+  bottom: 10px;
+  right: 18px;
+  width: 8px;
+  height: 8px;
+  background-color: #504f4f;
+  border-radius: 50%;
+  border: 1px solid #c7c3c3;
+}
+
+.iphone.black .fa {
+  position: absolute;
+  font-size: 70px;
+  top: 213px;
+  left: 97px;
+}
+
+.iphone.black .fa.fa-apple {
+  color: white;
+}
+
+.iphone.black .lock {
+  position: absolute;
+  top: 120px;
+  left: -2px;
+  width: 3px;
+  height: 55px;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  background-color: #232524;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.black .volume {
+  position: absolute;
+  top: 100px;
+  right: -2px;
+  width: 3px;
+  height: 70px;
+}
+
+.iphone.black .volume .up {
+  width: 100%;
+  height: 30px;
+  background-color: #232524;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.black .volume .down {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+  background-color: #232524;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.black .notif {
+  position: absolute;
+  top: 65px;
+  right: -2px;
+  width: 3px;
+  height: 20px;
+  background-color: #232524;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.red {
+  position: absolute;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-name: "red";
+          animation-name: "red";
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: 1;
+}
+
+@-webkit-keyframes red {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(-105deg);
+            transform: rotate(-105deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes red {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(-105deg);
+            transform: rotate(-105deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+.iphone.red .border {
+  width: 258px;
+  height: 510px;
+  background-color: red;
+  border-radius: 40px;
+  -webkit-box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.5), 0 0 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.5), 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 7px;
+}
+
+.iphone.red .border .line {
+  position: absolute;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: red;
+  -webkit-box-shadow: inset -3px 0 4px -1px rgba(0, 0, 0, 0.5), inset 2px 0 2px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -3px 0 4px -1px rgba(0, 0, 0, 0.5), inset 2px 0 2px -1px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.red .border .line.line-top {
+  top: 45px;
+}
+
+.iphone.red .border .line.line-bottom {
+  bottom: 45px;
+}
+
+.iphone.red .border .glass {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  border: 2px solid #d60000;
+  border-radius: 34px;
+  -webkit-box-shadow: inset 6px 0 5px -5px rgba(255, 255, 255, 0.8), inset -6px 0 5px -5px rgba(255, 255, 255, 0.8), 0 0 2px 0 rgba(255, 255, 255, 0.7);
+          box-shadow: inset 6px 0 5px -5px rgba(255, 255, 255, 0.8), inset -6px 0 5px -5px rgba(255, 255, 255, 0.8), 0 0 2px 0 rgba(255, 255, 255, 0.7);
+  padding: 8px;
+}
+
+.iphone.red .border .glass .camera {
+  position: relative;
+  width: 90px;
+  height: 102px;
+  border-radius: 25px;
+  background: red;
+  border: 3px solid #d60000;
+  -webkit-box-shadow: 6px 0 5px -5px rgba(255, 255, 255, 0.8), -6px 0 5px -5px rgba(255, 255, 255, 0.8);
+          box-shadow: 6px 0 5px -5px rgba(255, 255, 255, 0.8), -6px 0 5px -5px rgba(255, 255, 255, 0.8);
+}
+
+.iphone.red .border .glass .camera .objective {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px solid red;
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.red .border .glass .camera .objective.objective-top {
+  top: 5px;
+  left: 5px;
+}
+
+.iphone.red .border .glass .camera .objective.objective-bottom {
+  bottom: 5px;
+  left: 5px;
+}
+
+.iphone.red .border .glass .camera .objective.objective-right {
+  top: 33px;
+  right: 5px;
+}
+
+.iphone.red .border .glass .camera .objective .lens {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #161a23;
+}
+
+.iphone.red .border .glass .camera .objective .lens::after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: -webkit-gradient(linear, left top, right top, from(#26437d), color-stop(60%, #0f0d1b), to(#647893));
+  background: linear-gradient(90deg, #26437d 0%, #0f0d1b 60%, #647893 100%);
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.iphone.red .border .glass .camera .flash {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  height: 16px;
+  width: 16px;
+  background: -webkit-gradient(linear, left top, right top, from(#d7cdc4), color-stop(50%, #f5e7d9), to(#d2c5ba));
+  background: linear-gradient(90deg, #d7cdc4 0%, #f5e7d9 50%, #d2c5ba 100%);
+  border-radius: 50%;
+  border: 2px solid red;
+  -webkit-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2), -2px 0 2px 0 rgba(255, 255, 255, 0.4);
+          box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2), -2px 0 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+.iphone.red .border .glass .camera .mic {
+  position: absolute;
+  bottom: 10px;
+  right: 18px;
+  width: 8px;
+  height: 8px;
+  background-color: #504f4f;
+  border-radius: 50%;
+  border: 1px solid #c7c3c3;
+}
+
+.iphone.red .fa {
+  position: absolute;
+  font-size: 70px;
+  top: 213px;
+  left: 97px;
+}
+
+.iphone.red .fa.fa-apple {
+  color: white;
+}
+
+.iphone.red .lock {
+  position: absolute;
+  top: 120px;
+  left: -2px;
+  width: 3px;
+  height: 55px;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  background-color: red;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+}
+
+.iphone.red .volume {
+  position: absolute;
+  top: 100px;
+  right: -2px;
+  width: 3px;
+  height: 70px;
+}
+
+.iphone.red .volume .up {
+  width: 100%;
+  height: 30px;
+  background-color: red;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.red .volume .down {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+  background-color: red;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.iphone.red .notif {
+  position: absolute;
+  top: 65px;
+  right: -2px;
+  width: 3px;
+  height: 20px;
+  background-color: red;
+  -webkit-box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 6px 2px -5px rgba(0, 0, 0, 0.5), inset 0 -6px 2px -5px rgba(0, 0, 0, 0.5), inset -5px 0 1px -5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+/*# sourceMappingURL=style.css.map */
